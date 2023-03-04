@@ -102,7 +102,7 @@ namespace console
 			SetConsoleTextAttribute(hconsole, defcolor);
 			SetConsoleTextAttribute(herror, red);
 
-			write("lovemachine injected\nconsole created");
+			//write("lovemachine injected\nconsole created");
 		}
 	}
 
@@ -110,7 +110,7 @@ namespace console
 	{
 		if (hconsole == NULL || herror == NULL) return;
 
-		console::write("removing console");
+		//console::write("removing console");
 		FreeConsole();
 	}
 }

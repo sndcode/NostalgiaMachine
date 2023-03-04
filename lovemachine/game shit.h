@@ -111,7 +111,6 @@ namespace game
 			// thx catalindragan22 (c) // uc
 			//clientstate = *reinterpret_cast<cclientstate**>(memory::pattern("engine.dll", "B9 ? ? ? ? E8 ? ? ? ? E8 ? ? ? ? 83 78 14 00") + 0x1);
 			console::write_hex("/signature/ clientstate", (dword)clientstate, darkgreen);
-			//console::write_hex("netchannel", (dword)clientstate->m_NetChannel, darkgreen);
 
 			dword weapon_data = memory::pattern("client.dll", "0F B7 81 ? ? ? ? 50 E8 ? ? ? ? 83 C4 04 C3");
 			console::write_hex("/signature/ weapon_data", weapon_data, darkgreen);
